@@ -1,0 +1,42 @@
+\documentclass[10pt]{article}
+
+\usepackage{xcolor}
+\usepackage[colorlinks = true,
+            linkcolor = blue]{hyperref}
+\usepackage[margin=3cm]{geometry}
+
+% Sensitive data
+\input{private_info}
+% Removing page numbering
+\pagenumbering{gobble}
+
+% Move title on the left
+\makeatletter
+\renewcommand{\maketitle}{\bgroup\setlength{\parindent}{0pt}
+  \begin{flushleft}
+    \textbf{\Huge\@title}
+  \end{flushleft}\egroup
+}
+\makeatother
+
+% Title
+\title{\Name\ \Surname}
+\author{}
+\date{}
+
+% Vertical line
+\usepackage{array, xcolor}
+\definecolor{lightgray}{gray}{0.8}
+\newcolumntype{L}{>{\raggedleft}p{0.13\textwidth}}
+\newcolumntype{R}{p{0.8\textwidth}}
+\newcommand\VRule{\color{lightgray}\vrule width 0.5pt}
+
+\begin{document}
+% Heading
+\maketitle
+\Address | \Phone | \Email | \Github
+% document
+\input{sections/about_me}
+\input{sections/projects}
+\input{sections/experience}
+\end{document}

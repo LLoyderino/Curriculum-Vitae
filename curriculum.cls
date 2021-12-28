@@ -61,3 +61,10 @@
 		{\footnotesize \textbf{\textcolor{black}{#3}}}\\% Right-aligned entry qualifier text
 		#4 % Entry description text
 	}\\\\}
+
+\newcommand{\tech}[3]{
+  \textbf{#1}
+  \hfill
+  (#2)\\
+  #3
+}

@@ -3,6 +3,10 @@
 
 \LoadClass[10pt]{article}
 
+% Font
+\usepackage[T1]{fontenc}
+\usepackage[default]{raleway}
+
 % Importing packages
 \usepackage{xcolor}
 \usepackage[colorlinks = true,
@@ -66,5 +70,5 @@
   \textbf{#1}
   \hfill
   (#2)\\
-  #3
+  #3 \\\\
 }

@@ -1,11 +1,17 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{curriculum}
 
+% Sensitive data
+\input{private_info}
+
 \LoadClass[10pt]{article}
 
 % Font
 \usepackage[T1]{fontenc}
 \usepackage[default]{raleway}
+
+% Fontawesome
+\usepackage{fontawesome}
 
 % Importing packages
 \usepackage{xcolor}
@@ -16,12 +22,20 @@
 % Removing page numbering
 \pagenumbering{gobble}
 
-% Move title on the left
+% Title
 \makeatletter
 \renewcommand{\maketitle}{\bgroup\setlength{\parindent}{0pt}
-  \begin{flushleft}
-    \textbf{\Huge\@title}
-  \end{flushleft}\egroup
+  \begin{minipage}{0.5\textwidth}
+    \begin{flushleft}
+      \textbf{\Huge\@title}
+    \end{flushleft}%\egroup
+  \end{minipage}
+  \begin{minipage}{0.5\textwidth}
+    \begin{tabular}{p{4cm}p{0.2cm}p{4cm}}
+      \faHome \Address && \faPhone \Phone \\
+      \faEnvelope \Email && \faGithub \Github
+    \end{tabular}
+  \end{minipage}
 }
 \makeatother
 

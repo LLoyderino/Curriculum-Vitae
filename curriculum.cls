@@ -79,9 +79,10 @@
 		{\footnotesize \textbf{\textcolor{black}{#3}}}\\% Right-aligned entry qualifier text
 		#4 % Entry description text
 	}\\\\}
-\newcommand{\tech}[3]{
-  \textbf{#1}
+
+\newcommand{\tech}[4][]{
+  \textbf{#2{\color{violet}#1}}
   \hfill
-  (#2)\\
-  #3 \\\\
+  (#3)\\
+  #4 \\\\
 }

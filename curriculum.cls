@@ -20,7 +20,7 @@
 \usepackage[a4paper, margin=2.5cm]{geometry}
 
 % Removing page numbering
-\pagenumbering{gobble}
+%\pagenumbering{gobble}
 
 % Title
 \makeatletter

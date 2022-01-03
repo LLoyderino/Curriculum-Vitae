@@ -17,7 +17,7 @@
 \usepackage{xcolor}
 \usepackage[colorlinks = true,
             linkcolor = blue]{hyperref}
-\usepackage[margin=3cm]{geometry}
+\usepackage[a4paper, margin=2.5cm]{geometry}
 
 % Removing page numbering
 \pagenumbering{gobble}

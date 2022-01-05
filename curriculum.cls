@@ -31,7 +31,7 @@
     \end{flushleft}%\egroup
   \end{minipage}
   \begin{minipage}{0.5\textwidth}
-    \begin{tabular}{p{4cm}p{0.2cm}p{4cm}}
+    \begin{tabular}{p{5cm}p{0.2cm}p{5cm}}
       \faHome \Address && \faPhone \Phone \\
       \faEnvelope \Email && \faGithub \Github
     \end{tabular}
